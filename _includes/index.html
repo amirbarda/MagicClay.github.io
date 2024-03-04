@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="assets/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="assets/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>MagicClay: Sculpting Meshes With Generative Neural Fields</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/bulma.min.css">
+  <link rel="stylesheet" href="assets/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="assets/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="assets/js/fontawesome.all.min.js"></script>
+  <script src="assets/js/bulma-carousel.min.js"></script>
+  <script src="assets/js/bulma-slider.min.js"></script>
+  <script src="assets/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">MagicClay: Sculpting Meshes With Generative Neural Fields</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Amir Barda</a><sup>1*</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Thibault Groueix</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Noam Aigerman</a><sup>2,3</sup>,</span>
+                    <span class="author-block">
+                      <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Vladimir Kim</a><sup>2</sup>,</span>
+                        <span class="author-block">
+                          <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Amit Haim Bermano</a><sup>1</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Tel Aviv University, <sup>2</sup>Adobe Research, <sup>3</sup>Université de Montréal</span>
+                   <span class="eql-cntrb"><small><br><sup>*</sup>Research performed during Adobe Internsip</small></span> 
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links" >
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="assets/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+      <span class="seq-vid">
+      <video poster="" id="res3" width="300" height="300" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="assets/videos/results/iron_man.mp4"
+        type="video/mp4">
+      </video>
+      	<i>"iron man"</i>
+      </span>
+
+      <span class="seq-vid">
+      <video poster="" id="res4" width="300" height="300" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="assets/videos/results/minotaur.mp4"
+        type="video/mp4">
+      </video>
+	<i>"a minotaur"</i>
+      </span>
+
+      <span class="seq-vid">
+      <video poster="" id="res6" width="300" height="300" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="assets/videos/results/bear.mp4"
+        type="video/mp4">
+      </video>
+	<i>"a bear"</i>
+      </span>
+
+      <span class="seq-vid">
+      <video poster="" id="res0" width="300" height="300" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="assets/videos/results/cowboy_horse.mp4"
+        type="video/mp4">
+      </video>
+	<i>"a cowboy riding a horse"</i>
+      </span>
+
+      <span class="seq-vid">
+      <video poster="" id="res2" width="300" height="300" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="assets/videos/results/astro_horse.mp4"
+        type="video/mp4">
+      </video>
+	<i>"an astronaut riding a horse"</i>
+      </span>
+
+      <span class="seq-vid">
+      <video poster="" id="res7" width="300" height="300" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="assets/videos/results/centaur.mp4"
+        type="video/mp4">
+      </video>
+	<i>"a centaur"</i>
+      </span>
+
+      <span class="seq-vid">
+      <video poster="" id="res5" width="300" height="300" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="assets/videos/results/sword.mp4"
+        type="video/mp4">
+      </video>
+	<i>"a man holding a knights sword"</i>
+      </span>
+
+      <span class="seq-vid">
+      <video poster="" id="res9" width="300" height="300" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="assets/videos/results/wizard_staff.mp4"
+        type="video/mp4">
+      </video>
+	<i>"a man holding a wizard's staff"</i>
+      </span>
+
+      <span class="seq-vid">
+      <video poster="" id="res8" width="300" height="300" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="assets/videos/results/mermaid.mp4"
+        type="video/mp4">
+      </video>
+	<i>"a mermaid"</i>
+      </span>
+
+      <span class="seq-vid">
+      <video poster="" id="res1" width="300" height="300" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="assets/videos/results/angel_wings.mp4"
+        type="video/mp4">
+      </video>
+	<i>"man with angel wings"</i>
+      </span>
+
+      <span class="seq-vid">
+      <video poster="" id="res10" width="300" height="300" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="assets/videos/results/airplane_wings.mp4"
+        type="video/mp4">
+      </video>
+	<i>"man with airplane wings"</i>
+      </span>
+
+      <span class="seq-vid">
+      <video poster="" id="res11" width="300" height="300" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="assets/videos/results/bat_wings.mp4"
+        type="video/mp4">
+      </video>
+	<i>"man with bat wings"</i>
+      </span>
+
+      <h2 class="subtitle has-text-centered">
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent developments in neural fields have brought phenomenal capabilities to the field of shape generation, but they lack crucial properties,
+            such as incremental control — a fundamental requirement for artistic work.
+            Triangular meshes, on the other hand, are the representation of choice for
+            most geometry related tasks, offering efficiency and intuitive control, but do
+            not lend themselves to neural optimization. To support downstream tasks,
+            previous art typically proposes a two-step approach, where first a shape is
+            generated using neural fields, and then a mesh is extracted for further processing. Instead, in this paper we introduce a hybrid approach that maintains
+            both a mesh and a Signed Distance Field (SDF) representations consistently.
+            Using this representation, we introduce MagicClay — an artist friendly tool
+            for sculpting regions of a mesh according to textual prompts while keeping
+            other regions untouched.
+                              
+          </p>
+          <img src="assets/images/overview_v2.png" alt="overview figure">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- End paper abstract -->
+
+
+
+
+<!-- Evolution Video -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+
+          <h2 class="subtitle has-text-centered">
+        MagicClay uses a hybrid mesh-SDF representation which allows for non-distructive local editing of the mesh
+      </h2>
+          <div class="hero-body">
+      <video poster="" id="evo0" width="450" height="300" autoplay controls muted loop>
+        <source src="assets/videos/evolution/angel_wings_evolution.mp4"
+        type="video/mp4">
+      </video>
+      <video poster="" id="evo1" width="450" height="300" autoplay controls muted loop>
+<script>
+    document.getElementById('evo1').play();
+</script>
+        <source src="assets/videos/evolution/0001-0550.mp4"
+        type="video/mp4">
+      </video>
+
+    </div>
+  </div>
+</section>
+
+<!-- End Evolution Video -->
+
+
+<!-- Sequential Editing Video -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+
+          <h2 class="subtitle has-text-centered">
+        Application: sequential editing of the <b>same mesh</b>
+      </h2>
+          <div class="hero-body">
+      <span class="seq-vid">
+      <video poster="" id="seq0" width="225" height="400" autoplay controls muted loop>
+        <!-- Your video here -->
+        <source src="assets/videos/sequential/head/head0.mp4"
+        type="video/mp4">
+      </video>
+      initial mesh
+      </span>
+      <span class="seq-vid">
+      <video poster="" id="seq1" width="225" height="400" autoplay controls muted loop>
+        <!-- Your video here -->
+        <source src="assets/videos/sequential/head/head1.mp4"
+        type="video/mp4">
+      </video>
+      + <i>"devil horns"</i>
+      </span>
+      <span class="seq-vid">
+      <video poster="" id="seq2" width="225" height="400" autoplay controls muted loop>
+        <!-- Your video here -->
+        <source src="assets/videos/sequential/head/head2.mp4"
+        type="video/mp4">
+      </video>
+      + <i>"elf ears"</i>
+      </span>
+      <span class="seq-vid">
+      <video poster="" id="seq3" width="225" height="400" autoplay controls muted loop>
+        <!-- Your video here -->
+        <source src="assets/videos/sequential/head/head3.mp4"
+        type="video/mp4">
+      </video>
+      + <i>"pig snout"</i>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- End Sequential Editing Video -->
+
+
+<!-- Preseving Mesh properties Video -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+
+          <h2 class="subtitle has-text-centered">
+        Application: preserving properties of the original triangulation, such as vertex groups for animations (See supplementary for more information).
+      </h2>
+          <div class="hero-body">
+      <video poster="" id="ani1" width="450" height="300" autoplay controls muted loop>
+        <!-- Your video here -->
+
+        <source src="assets/videos/animation/original.mp4"
+        type="video/mp4">
+      </video>
+            <video poster="" id="ani2" width="450" height="300" autoplay controls muted loop>
+        <!--  Preseving Mesh properties Editing Video -->
+        <source src="assets/videos/animation/minotuar_animation.mp4"
+        type="video/mp4">
+      </video>
+
+    </div>
+  </div>
+</section>
+
+<!-- End Preseving Mesh properties Video -->
+
+
+<!-- Image carousel -->
+<!--
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <img src="assets/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="assets/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="assets/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item">
+      <img src="assets/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+-->
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<!--
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!--
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="assets/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" height="100%">
+            <source src="assets/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" height="100%">\
+            <source src="assets/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+<!-- End video carousel -->
+
+
+
+<!-- Paper poster -->
+<!--
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="assets/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+-->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
